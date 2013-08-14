@@ -54,41 +54,60 @@
 	
 	<div class="image">
 		<span data-picture data-alt="Screenshot of FamilyOS">
-			<span data-src="/assets/img/OS_430.png"></span>
-			<span data-src="/assets/img/OS_930.png" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/OS_1120.png" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/OS_930.png" data-media="(min-width: 1230px)"></span>
+			<span data-src="/assets/img/OS_930.png"></span>
 		</span>
 		<div class="overlay"></div></a>
 	</div>
 
 	<div class="details">
-		<h2 class="title"><a href="#" itemprop="name">FamilyOS Operating System</a></h2>
-		<p class="description" itemprop="description">This webapp suggests prerequisite skills necessary for mastering any subject.</p>
+		<h2 class="title"><a href="#" itemprop="name">391OS Operating System</a></h2>
+		<p class="description" itemprop="description">An operating system written in C and x86 assembly. Winner of a semester-long OS design competition at University of Illinois at Urbana Champaign.</p>
+
 	</div>
 	
 	<div class="overview">
 		<ul class="elements" itemprop="about">
             <li>Notable Features</li>
-            <li>Generates prerequisites by crawling syllabi of top universities and by parsing textbooks.</li>
-            <li>Custom MVC url parser and router made in PHP.</li>
-			<li>Realtime text autocomplete for searching operations.</li>
-			<li>References Wikipedia to verify the authenticity of user-inputs.</li>
+            <li>Partially ported for Raspberry Pi(ARMv7), including interrupt emulation and syscalls.</li>
+            <li>Adequate video buffer for three virtualized terminal windows and supports up to four nested shells.</li>
+			<li>Pre-emptive multitasking allows programs such as grep, cat and paint to run in different terminals.</li>
+			<li>Uses GRUB.</li>
 		</ul>
-		<a class="anchor" href="http://prereq.web.engr.illinois.edu/" target="_blank" itemprop="url">Visit Site</a>
 	</div>
 </article>
 
+<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
+	
+	<div class="image">
+		<span data-picture data-alt="CV Hand">
+			<span data-src="/assets/img/CV_930.png"></span>
+		</span>
+		<div class="overlay"></div></a>
+	</div>
+
+	<div class="details">
+		<h2 class="title"><a href="#" itemprop="name">Webcam Finger Detector</a></h2>
+		<p class="description" itemprop="description">A computer vision module written in python for an one rock-paper-scissors game.</p>
+
+	</div>
+	
+	<div class="overview">
+		<ul class="elements" itemprop="about">
+            <li>Process</li>
+            <li></li>
+            <li>Applies a gaussian blur, and converts the resulting RGB image to HSV color format.</li>
+			<li>Portions of the image outside of a HSV threshold are discarded. We find the contours of the remaining image.</li>
+			<li>Convex hulls are calculated for the contours, and hull defects with angles smaller than 90 degrees are counted as fingers.</li>
+		</ul>
+	</div>
+</article>
 
 <article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
 	
 	<div class="image">
 		<a href="http://prereq.web.engr.illinois.edu/" target="_blank">
 		<span data-picture data-alt="Screenshot of PreReq's Skill Interface">
-			<span data-src="/assets/img/btp_430.jpg"></span>
-			<span data-src="/assets/img/btp_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/btp_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/btp_930.jpg" data-media="(min-width: 1230px)"></span>
+			<span data-src="/assets/img/btp_930.jpg"></span>
 		</span>
 		<div class="overlay"></div></a>
 	</div>
@@ -108,201 +127,6 @@
 		</ul>
 		<a class="anchor" href="http://prereq.web.engr.illinois.edu/" target="_blank" itemprop="url">Visit Site</a>
 	</div>
-</article>
-
-<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
-
-	<div class="image">	
-		<a href="http://www.candiedbakery.com.au" target="_blank">
-		<span data-picture data-alt="Screenshot of Candied Bakeries website">
-			<span data-src="/assets/img/candied_430.jpg"></span>
-			<span data-src="/assets/img/candied_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/candied_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/candied_930.jpg" data-media="(min-width: 1230px)"></span>
-			<!--[if (lt IE 9) & (!IEMobile)]>
-	            <span data-src="/assets/img/candied_1120.jpg"></span>
-	        <![endif]-->
-			<noscript>
-				<img itemprop="image" src="/assets/img/candied_1120.jpg" alt="Screenshot of Candied Bakeries website">
-			</noscript>
-		</span>
-		<div class="overlay"></div></a>
-	</div>
-
-	<div class="details">
-		<h2 class="title"><a href="http://www.candiedbakery.com.au" target="_blank" itemprop="name">Candied Bakery</a></h2>
-		<a class="url" href="http://www.candiedbakery.com.au" target="_blank" itemprop="url">www.candiedbakery.com.au</a>
-		<p class="credit">Developed for <a href="http://www.btpdesign.com" target="_blank" itemprop="contributor">B T P</a></p>
-		<p class="description" itemprop="description">This single page website featured large scale images to showcase the bakeries goods.</p>
-	</div>
-
-	<div class="overview">
-		<ul class="elements" itemprop="about">
-			<li>Features</li>
-			<li>Hand crafted WordPress responsive theme</li>
-			<li>Manageable CSS created using <a href="http://sass-lang.com/" target="_blank">SASS</a> &amp; <a href="http://compass-style.org/" target="_blank">Compass</a></li>
-			<li>Smooth scrolling single page site</li>
-			<li>Navigation background color switches when user reaches certain point</li>
-			<li>Restricted Media area requiring the user to log in to see content</li>
-			<li>Full screen background images</li>
-		</ul>
-		<a class="anchor" href="http://www.candiedbakery.com.au" target="_blank" itemprop="url">Visit Site</a>
-	</div>
-
-</article>
-
-<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
-
-	<div class="image">
-		<a href="http://www.starward.com.au" target="_blank">
-		<span data-picture data-alt="Screenshot of Starward Whisky website">
-			<span data-src="/assets/img/starward_430.jpg"></span>
-			<span data-src="/assets/img/starward_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/starward_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/starward_930.jpg" data-media="(min-width: 1230px)"></span>
-			<!--[if (lt IE 9) & (!IEMobile)]>
-	            <span data-src="/assets/img/starward_1120.jpg"></span>
-	        <![endif]-->
-			<noscript>
-				<img itemprop="image" src="/assets/img/starward_1120.jpg" alt="Screenshot of Starward Whisky website">
-			</noscript>
-		</span>
-		<div class="overlay"></div></a>
-	</div>
-
-	<div class="details">
-		<h2 class="title"><a href="http://www.starward.com.au" target="_blank" itemprop="name">Starward Whisky</a></h2>
-		<a class="url" href="http://www.starward.com.au" target="_blank" itemprop="url">www.starward.com.au</a>
-		<p class="credit">Developed for <a href="http://www.btpdesign.com" target="_blank" itemprop="contributor">B T P</a></p>
-		<p class="description" itemprop="description">Used to engage customers with news, events and show them where they can get there hands on a bottle of this new Australian Whisky.</p>
-	</div>
-
-	<div class="overview">
-		<ul class="elements" itemprop="about">
-			<li>Features</li>
-			<li>Hand crafted WordPress responsive theme</li>
-			<li>Manageable CSS created using <a href="http://sass-lang.com/" target="_blank">SASS</a> &amp; <a href="http://compass-style.org/" target="_blank">Compass</a></li>
-			<li>Optimized markup to reduce load time for devices</li>
-			<li>Store locator built with Google Map's API &amp; locations stored in SQL database </li>
-		</ul>
-		<a class="anchor" href="http://www.starward.com.au" target="_blank" itemprop="url">Visit Site</a>
-	</div>
-
-</article>
-
-<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
-
-	<div class="image">
-		<a href="http://www.newworldwhisky.com.au" target="_blank">
-		<span data-picture data-alt="Screenshot of New World Whisky website">
-			<span data-src="/assets/img/nww_430.jpg"></span>
-			<span data-src="/assets/img/nww_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/nww_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/nww_930.jpg" data-media="(min-width: 1230px)"></span>
-			<!--[if (lt IE 9) & (!IEMobile)]>
-	            <span data-src="/assets/img/nww_1120.jpg"></span>
-	        <![endif]-->
-			<noscript>
-				<img itemprop="image" src="/assets/img/nww_1120.jpg" alt="Screenshot of New World Whisky website">
-			</noscript>
-		</span>
-		<div class="overlay"></div></a>
-	</div>
-
-	<div class="details">
-		<h2 class="title"><a href="http://www.newworldwhisky.com.au" target="_blank" itemprop="name">New World Whisky</a></h2>
-		<a class="url" href="http://www.newworldwhisky.com.au" target="_blank" itemprop="url">www.newworldwhisky.com.au</a>
-		<p class="credit">Developed for <a href="http://www.btpdesign.com" target="_blank" itemprop="contributor">B T P</a></p>
-		<p class="description" itemprop="description">This single page site contains a series of full screen panels which allows the user to explore the website with its unusual navigation.</p>
-	</div>
-
-	<div class="overview">
-		<ul class="elements" itemprop="about">
-			<li>Features</li>
-			<li>Hand crafted WordPress responsive theme</li>
-			<li>Seperate theme for mobiles pulling content from the same database</li>
-			<li>Single page website with an unusual layout</li>
-			<li>Restricted Media area making users log in to view the content</li>
-		</ul>
-		<a class="anchor" href="http://www.newworldwhisky.com.au" target="_blank" itemprop="url">Visit Site</a>
-	</div>
-
-</article>
-
-<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
-
-	<div class="image">
-		<a href="http://www.pmxray.com.au/" target="_blank">
-		<span data-picture data-alt="Port Macquarie X-Ray">
-			<span data-src="/assets/img/pmxr_430.jpg"></span>
-			<span data-src="/assets/img/pmxr_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/pmxr_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/pmxr_930.jpg" data-media="(min-width: 1230px)"></span>
-			<!--[if (lt IE 9) & (!IEMobile)]>
-	            <span data-src="/assets/img/pmxr_1120.jpg"></span>
-	        <![endif]-->
-			<noscript>
-				<img itemprop="image" src="/img/pmxr_1120.jpg" alt="Screenshot of HRH Program website">
-			</noscript>
-		</span>		
-		<div class="overlay"></div></a>
-	</div>
-
-	<div class="details">
-		<h2 class="title"><a href="http://www.pmxray.com.au/" target="_blank" itemprop="name">Port Macquarie X-Ray</a></h2>
-		<a class="url" href="http://www.pmxray.com.au/" target="_blank" itemprop="url">www.pmxray.com.au</a>
-		<p class="credit">Developed for <a href="http://www.btpdesign.com" target="_blank" itemprop="contributor">B T P</a></p>
-		<p class="description" itemprop="description">User friendly brochure website for Port Macquarie X-Ray. Responsive theme to make sure information is always easily accessible.</p>
-	</div>
-
-	<div class="overview">
-		<ul class="elements" itemprop="about">
-			<li>Features</li>
-			<li>Hand crafted WordPress responsive theme</li>
-			<li>Easy to manage content via WordPress</li>
-			<li>Mobile friendly image galleries</li>
-		</ul>
-		<a class="anchor" href="http://www.pmxray.com.au/" target="_blank" itemprop="url">Visit Site</a>
-	</div>
-	
-</article>
-
-<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
-		
-	<div class="image">
-		<a href="http://www.wealthadvantage.com.au" target="_blank">
-		<span data-picture data-alt="Screenshot of Wealth Advantage website">
-			<span data-src="/assets/img/wealthadvantage_430.jpg"></span>
-			<span data-src="/assets/img/wealthadvantage_930.jpg" data-media="(min-width: 480px) and (max-width: 930px)"></span>
-			<span data-src="/assets/img/wealthadvantage_1120.jpg" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
-			<span data-src="/assets/img/wealthadvantage_930.jpg" data-media="(min-width: 1230px)"></span>
-			<!--[if (lt IE 9) & (!IEMobile)]>
-	            <span data-src="/assets/img/wealthadvantage_1120.jpg"></span>
-	        <![endif]-->
-			<noscript>
-				<img itemprop="image" src="/assets/img/wealthadvantage_1120.jpg" alt="Screenshot of Wealth Advantage website">
-			</noscript>
-		</span>		
-		<div class="overlay"></div></a>
-	</div>
-
-	<div class="details">
-		<h2 class="title"><a href="http://www.wealthadvantage.com.au" target="_blank" itemprop="name">Wealth Advantage</a></h2>
-		<a class="url" href="http://www.wealthadvantage.com.au" target="_blank" itemprop="url">www.wealthadvantage.com.au</a>
-		<p class="credit">Developed for <a href="http://www.btpdesign.com" target="_blank" itemprop="contributor">B T P</a></p>
-		<p class="description" itemprop="description">First website built for <a href="http://www.btpdesign.com" target="_blank">BTP</a>. Clean two column layout, easy to use brochure website.</p>
-	</div>
-
-	<div class="overview">
-		<ul class="elements" itemprop="about">
-			<li>Features</li>
-			<li>Hand crafted WordPress responsive theme</li>
-			<li>Image slider linking to content throughout the site</li>
-			<li>Managable team section set up with WordPress Pods</li>
-		</ul>
-		<a class="anchor" href="http://www.wealthadvantage.com.au" target="_blank" itemprop="url">Visit Site</a>
-	</div>
-
 </article>
 
 			
