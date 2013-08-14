@@ -16,21 +16,49 @@ layout: default
 
 	<div class="details">
 		<h2 class="title"><a href="#" itemprop="name">FamilyOS Operating System</a></h2>
-		<p class="description" itemprop="description">This webapp suggests prerequisite skills necessary for mastering any subject.</p>
+		<p class="description" itemprop="description">An operating system written in C and x86 assembly. Winner of a semester-long OS design competition at University of Illinois at Urbana Champaign.</p>
+
 	</div>
 	
 	<div class="overview">
 		<ul class="elements" itemprop="about">
             <li>Notable Features</li>
-            <li>Generates prerequisites by crawling syllabi of top universities and by parsing textbooks.</li>
-            <li>Custom MVC url parser and router made in PHP.</li>
-			<li>Realtime text autocomplete for searching operations.</li>
-			<li>References Wikipedia to verify the authenticity of user-inputs.</li>
+            <li>Partially ported for Raspberry Pi(ARMv7), including interrupt emulation and syscalls.</li>
+            <li>Adequate video buffer for three virtualized terminal windows and supports up to four nested shells.</li>
+			<li>Pre-emptive multitasking allows programs such as grep, cat and paint to run in different terminals.</li>
+			<li>Uses GRUB.</li>
 		</ul>
-		<a class="anchor" href="http://prereq.web.engr.illinois.edu/" target="_blank" itemprop="url">Visit Site</a>
 	</div>
 </article>
 
+<article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
+	
+	<div class="image">
+		<span data-picture data-alt="CV Hand">
+			<span data-src="/assets/img/CV_430.png"></span>
+			<span data-src="/assets/img/CV_930.png" data-media="(min-width: 480px) and (max-width: 930px)"></span>
+			<span data-src="/assets/img/CV_1120.png" data-media="(min-width: 930px) and (max-width: 1230px)"></span>
+			<span data-src="/assets/img/CV_930.png" data-media="(min-width: 1230px)"></span>
+		</span>
+		<div class="overlay"></div></a>
+	</div>
+
+	<div class="details">
+		<h2 class="title"><a href="#" itemprop="name">Webcam Finger Detector</a></h2>
+		<p class="description" itemprop="description">A computer vision module written in python for an one rock-paper-scissors game.</p>
+
+	</div>
+	
+	<div class="overview">
+		<ul class="elements" itemprop="about">
+            <li>Process</li>
+            <li></li>
+            <li>Applies a gaussian blur, and converts the resulting RGB image to HSV color format.</li>
+			<li>Portions of the image outside of a HSV threshold are discarded. We find the contours of the remaining image.</li>
+			<li>Convex hulls are calculated for the contours, and hull defects with angles smaller than 90 degrees are counted as fingers.</li>
+		</ul>
+	</div>
+</article>
 
 <article class="project" itemscope itemtype="http://schema.org/SoftwareApplication">
 	
