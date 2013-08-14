@@ -1,0 +1,48 @@
+.container{
+    position:relative;
+
+    padding: 0 4%;
+    width:92%;
+    max-width: emCalc(1540px);
+    margin: 0 auto;
+}
+
+.container-alt{
+    padding: emCalc(6px) 4%;
+
+    background-color: $green-darkist;
+    
+    color:$green-dark;
+    font-family: $font-family-serif;
+    letter-spacing: emCalc(1px);
+
+    a{
+        color: $green-dark;
+        text-transform: uppercase;
+    
+        &:hover {
+            color: $green-lightest;
+        }
+    }
+
+    li{
+        margin: 0 emCalc(20px) 0 0;
+       
+        font-size: emCalc(14px);
+        text-transform: uppercase;
+
+        &:first-child{
+            margin: 0 emCalc(12px) 0 0;
+
+            color:$green;
+            text-transform: uppercase;
+           
+        }
+        &:last-child{
+            margin-right:0;
+        }
+    }
+}
+#content{
+    background-color: $green;
+}

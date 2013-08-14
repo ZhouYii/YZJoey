@@ -1,0 +1,41 @@
+body {
+	width:100%;
+	height:100%;
+
+	background-color: $body-bg;
+
+	font-size: $base-font-size;
+	font-family: $body-font-family;
+	font-weight: $body-font-weight;
+	font-style:$body-font-style;
+	color: $body-font-color; 
+		
+	-webkit-font-smoothing: antialiased; // Fix for webkit rendering 
+	-webkit-text-size-adjust: 100%;
+}
+
+section {
+	-webkit-animation: 5s 1  fadeIn  ease-out;
+    -moz-animation: 5s 1 fadeIn  ease-out;
+    animation: 5s 1 fadeIn ease-out;
+}
+
+figure {
+	margin: 0 0 emCalc(15px);
+}
+
+iframe {
+	margin: emCalc(40px) 0 0 0;
+}
+
+article {
+
+pre {
+	padding: emCalc(10px);
+	&.prettyprint{
+		width: auto;
+	}
+}
+}
+
+

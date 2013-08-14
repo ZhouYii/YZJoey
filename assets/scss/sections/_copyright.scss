@@ -1,0 +1,12 @@
+.copyright{
+	padding: emCalc(100px) 0 emCalc(80px);
+
+	p{
+		max-width:100%;
+
+		font-size: emCalc(13px);
+		text-align: center;
+		text-transform: uppercase;
+		color: $green-lightest;
+	}
+}

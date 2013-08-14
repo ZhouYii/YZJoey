@@ -1,0 +1,14 @@
+// Transitions
+@mixin transition($element:all,$time:1s,$transition:ease) {
+  -webkit-transition: $element $time $transition;
+     -moz-transition: $element $time $transition;
+      -ms-transition: $element $time $transition;
+       -o-transition: $element $time $transition;
+          transition: $element $time $transition;
+}
+//Inline block with support for old IE
+@mixin inline-block {
+  display: -moz-inline-stack; // ff 2
+  display: inline-block;
+  zoom:1; *display: inline; _height: 15px; // ie 6-7
+}

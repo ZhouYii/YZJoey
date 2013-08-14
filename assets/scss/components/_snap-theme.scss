@@ -1,0 +1,95 @@
+#no-drag {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: emCalc(100px);
+	margin-left: -25%;
+	margin-top: emCalc(-50px);
+
+	color: $white;
+	text-align: center;
+	line-height: emCalc(100px);
+}
+
+.drawer-inner {
+	@include transition(opacity, .3s, ease);
+}
+
+.snapjs-expand-left .drawer-inner,
+.snapjs-expand-right .drawer-inner {
+	opacity: 0;
+}
+
+.snap-drawer {
+	background: $green-darkist;
+	color: $white;
+
+	//Shadow between page and sidebar
+	-webkit-box-shadow: inset emCalc(-12px) 0 0 0 $shadow;
+	box-shadow: inset emCalc(-12px) 0  emCalc(5px)  emCalc(-5px) $shadow;
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+	}
+	li {
+		display: block;
+		border-top: emCalc(1px) solid $shadow;
+
+		&:last-of-type {
+			border-bottom: emCalc(1px) solid $shadow;
+		}
+
+		a{			
+			text-transform: uppercase;
+		
+			&:hover {
+				background-color: $shadow;
+				color: $green-lightest;
+			}
+		}
+	}
+	a{
+		display: block;
+		font-weight: 300;
+	}
+
+	.pages {
+		margin: emCalc(30px) 0 0;
+		
+		a {
+			
+			font-size: emCalc(20px);
+			padding: emCalc(15px) emCalc(15px) emCalc(15px) emCalc(11px);
+		}
+	}
+
+	p {
+		padding: emCalc(25px) emCalc(15px);
+		margin: 0;
+		line-height: emCalc(20px);
+		font-size: emCalc(14px);
+		color: $white;
+		
+	}
+
+	.contact-social {
+		width: 100%;
+		display: block;
+		float:left;
+
+		li {
+			margin: 0;
+			font-family: $font-family-serif;
+			text-align: left;
+		}
+
+		a{
+			padding: emCalc(13px);
+			font-size: emCalc(15px);
+			font-weight: 300;
+			color: $green-dark;
+		}
+	}
+}

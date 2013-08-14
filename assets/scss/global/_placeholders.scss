@@ -1,0 +1,33 @@
+%anchor-large {
+	font-size: emCalc(25px);
+	font-family: $font-family-serif;
+	text-transform: uppercase;
+}
+
+%main-image {
+	position: relative;
+
+	cursor: pointer;
+	img{
+		width: 100%;
+		max-width:100%;
+		display: block;
+	}
+}
+
+%image-overlay {
+	@include transition(background-color,.4s,ease-out);
+	position:absolute;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+
+	background-color: rgba(255, 255, 255, 0.2);
+	
+	&:hover{
+		@include transition(background-color,.25s,ease-in);
+		background-color: transparent;
+	}
+}

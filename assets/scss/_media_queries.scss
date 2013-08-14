@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .project {
+        .details {
+            @include span-columns(4,12);
+        }
+        .overview {
+            @include span-columns(3,12);
+        }
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .project{
+        .image {
+            @include span-columns(12 omega, 12);
+            min-width: 0;
+            margin: 0 0 emCalc(25px);
+        }
+        .details {
+            @include span-columns(6,12);
+        }
+        .overview {
+            @include span-columns(6 omega,12);
+        }
+        .visit {
+            @include span-columns(6 omega,6);
+        }
+    }
+}
+
+// Smaller than standard 960 (devices and browsers)
+@media only screen and (max-width: 959px) {
+	.contact-details,
+    .contact-social {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .header {
+        padding: 2.5em 4%;
+        
+        .link-one,
+        .link-two {
+            display: none;
+        }
+
+        .nav{
+            width:100%;
+        }
+
+        .logo {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .project {
+        .image {
+            @include span-columns(12 omega,12);
+        }
+        .details {
+            @include span-columns(12 omega,12);
+        }
+        .overview {
+            @include span-columns(12 omega,12);
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+    .prettyprint {
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,84 @@
+.header{
+    padding: emCalc(80px) 4%;
+    margin: 0 auto;
+    display: block;
+    
+    a{
+        font-size: emCalc(20px);
+        font-weight: 300; 
+        text-transform: uppercase;
+        @include transition(all,.4s,ease-out);
+        &:hover {
+            border-bottom: emCalc(2px) solid $green-darkist;
+            @include transition(all,.25s,ease);
+        }
+    }
+
+    li{
+        float: left;
+    }
+
+    .active {
+        border-bottom: emCalc(2px) solid $white;
+    }
+
+    .nav{
+        display: table;   /* Allow the centering to work */
+        list-style-type: none;
+        margin: 0 auto;
+        width: 400px;
+
+        a{
+            margin: 70px 0 0;
+            display: block;
+        }
+    }
+
+    .link-one{
+        text-align: right;
+    }
+
+    .link-two{
+        text-align: left;
+    }
+
+    .logo{
+        width: 160px;
+        height: 160px;
+        padding: 0 20px;
+
+        
+        img{
+            text-align: center;
+            font-size: emCalc(26px); 
+            width:160px;
+        }
+       
+
+        a {
+            font-size: 1em;
+            margin: 0;
+
+            &:hover{
+                border-bottom: none;
+            }
+        }
+    }
+}
+img {
+  width: inherit ;  /* Make images fill their parent's space. Solves IE8. */
+  max-width: 100%; /* Add !important if needed. */
+  height: auto;    /* Add !important if needed. */
+}
+.contact-details{
+    @include span-columns(6,12);
+}
+.contact-social{
+    @include span-columns(6 omega,12);
+    text-align: right;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+    margin: emCalc(2px) 0 0 0;
+}

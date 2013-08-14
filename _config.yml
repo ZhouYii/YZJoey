@@ -1,0 +1,2 @@
+exclude: ["README.md", "config.rb", "Todo.md", "node_modules", "Gruntfile.js", "package.json", "BrowserStackTunnel.jar"]
+permalink: /:categories/:title/

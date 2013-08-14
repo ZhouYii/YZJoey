@@ -1,0 +1,64 @@
+// Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+// Define Colors
+$black: #2e2e2e;
+$shadow: #17332E;
+$green: #38E5D0;
+$green-lightest: #74FFE7;
+$green-light: #31d6c2;
+$green-medium: #59d8c1;
+$green-dark: #4ba696;
+$green-darkist: #1D403A;
+$white: #ffffff;
+
+//Headings
+$size-h1: 25px;
+$size-h2: 22px;
+$size-h3: 18px;
+
+// Set your base font-size in pixels so emCalc can do its magic below 
+$em-base: 16px;
+
+// We use these to style anchors 
+$anchor-text-decoration: none;
+$anchor-font-color: $white;
+$anchor-font-color-hover: $green-darkist;
+
+$font-family-serif: 'Anonymous Pro', 'lato', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-family-sans: 'lato', 'Anonymous Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$body-bg: $green;
+$body-font-color: $white;
+$body-font-family: $font-family-sans;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// We use these to style paragraphs 
+$paragraph-font-family: inherit;
+$paragraph-font-weight: 300;
+$paragraph-font-size: emCalc(18px);
+$paragraph-line-height: normal;
+$paragraph-margin-bottom: 36px;
+$paragraph-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes 
+$h1-font-size: emCalc(50px);
+$h2-font-size: emCalc(50px);
+$h3-font-size: emCalc(45px);
+$h4-font-size: emCalc(10px);
+
+//Highlight Colors
+$base-hightlight-color: $green;
+$base-hightLight-background-color: $green-darkist;
+
+//this is the default number of columns
+$total-columns: 12; 
+//width of each column
+$column-width   : 4em; 
+//space between columns
+$gutter-width   : 1em; 
+//space on the right and left of the grid
+$grid-padding   : $gutter-width;

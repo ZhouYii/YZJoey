@@ -1,0 +1,22 @@
+%anchor{
+	outline: 0;
+	color: $anchor-font-color; 
+	text-decoration: none; 
+	@include transition(color,.4s,ease-out);
+}
+%anchorHover{
+	@include transition(color,.25s,ease-in);
+	color:$anchor-font-color-hover;
+}
+a{
+	@extend %anchor;	
+	&:hover{
+		@extend %anchorHover;
+	}
+	&:visited{
+		@extend %anchor;
+	}
+	p &, p &:visited { 
+		line-height: inherit;
+	}
+}

@@ -1,0 +1,26 @@
+// Self Clearing Goodness 
+.container:after { display: block; visibility: hidden; clear: both; height: 0; content: "\0020"; }
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    content: '\0020'; }
+    .row:after,
+    .clearfix:after {
+        clear: both; }
+        .row,
+        .clearfix {
+            zoom: 1; }
+            .clear {
+                display: block;
+                visibility: hidden;
+                clear: both;
+                overflow: hidden;
+                width: 0;
+                height: 0;
+            }

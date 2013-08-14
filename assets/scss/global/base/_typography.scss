@@ -1,0 +1,42 @@
+h1{
+	margin: 0;
+
+	font-size: $h1-font-size; 
+	font-family:$font-family-serif;
+	letter-spacing: 0.05em;
+    line-height: emCalc(15px);
+	color:$white;
+	text-transform: uppercase;
+	text-align:center;
+}
+h2{
+	margin: 0 0 10px 0;
+	font-size: $h2-font-size; 
+	font-family:$font-family-serif;
+	letter-spacing: 0.05em;
+    line-height: emCalc(15px);
+	color:$white;
+	text-transform: uppercase;
+}
+h3{
+	margin: 0;
+	font-family:$font-family-serif;
+	font-size: $h3-font-size; 
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+    line-height: emCalc(15px);
+	color:$white;
+}
+h4{
+	margin: 0 0 20px 0;
+	font-size: $h4-font-size; 
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+p{
+	font-family: $paragraph-font-family;
+	font-weight: $paragraph-font-weight;
+	font-size: $paragraph-font-size;
+	margin-bottom: $paragraph-margin-bottom;
+	text-rendering: $paragraph-text-rendering;
+}

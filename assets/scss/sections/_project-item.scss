@@ -1,0 +1,95 @@
+.project{
+    float: left;
+    display: block;
+    margin:0 0 emCalc(100px);
+    max-width: 100%;
+    width: 100%;
+
+    &:last-of-type {
+        margin: 0;
+    }
+    
+    p{
+        max-width: 80%;
+    }
+
+    li{
+        display: block;
+    }
+
+    .image{
+        @include span-columns(7,12);
+        @extend %main-image;
+        min-width: emCalc(710px);
+        
+        .overlay{
+            @extend %image-overlay;
+        }
+    }
+
+    .details{
+        @include span-columns(5 omega, 12);
+    }
+
+    .overview{
+        @include span-columns(5 omega, 12);
+    }
+
+    .url{
+        margin: 0 0 emCalc(6px);
+
+        letter-spacing: emCalc(1px);
+
+    }
+
+    .credit{
+        margin:0 0 emCalc(30px);
+
+        font-size: emCalc(16px);
+        font-weight: 500;
+    }
+
+    .description{
+        margin:0 0 emCalc(30px);
+
+        font-size: emCalc(18px);
+    }
+    
+    .featured{
+        @extend .elements;
+        max-width:70%;
+
+        li{
+            display: inline;
+            
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+
+    .elements{
+        margin:0 0 emCalc(30px);
+
+        li{
+            padding:0 0 0 emCalc(10px);
+
+            font-size: emCalc(15px);
+            font-weight: 300;
+            line-height: emCalc(22px);
+
+            &:first-child{
+                margin:0 0 emCalc(1px);
+                padding-left:0;
+
+                font-weight: normal;
+                letter-spacing:emCalc(1px);
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    .anchor{
+       @extend %anchor-large;
+    }
+}

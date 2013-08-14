@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal portfolio &amp; blog for Allan Pope - Frontend Developer">
+	<title> Codepen Pattern Rodeo |  Allan Pope — Frontend Web Developer</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='https://plus.google.com/101491171162004714201' rel='author'>
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+	<script type="text/javascript" src="/assets/js/modernizr-custom.min.js"></script>
+</head>
+<body>
+
+	<div class="snap-drawers">
+		<div class="snap-drawer snap-drawer-left">
+			<div>
+				<ul class="pages">
+					<li><a href="/">Projects  </a></li>
+					<li><a href="/blog">Blog </a></li>
+				</ul>
+			</div>
+			<p>Get in touch, just send an email to allan@allanpope.com and I will get back to you as soon as possible.</p>
+			<ul class="contact-social"> 
+				<li><a href="https://twitter.com/allanpweb" target="_blank">Twitter</a></li>
+				<li><a href="http://codepen.io/allanpope" target="_blank">CodePen</a></li>
+				<li><a href="https://github.com/allanpope" target="_blank">Github</a></li>
+				<li><a href="http://www.last.fm/user/allanpweb">LastFm</a></li>
+			</ul>
+		</div>
+		 <div class="snap-drawer snap-drawer-right"></div>
+	</div>
+
+	<div id="content" class="snap-content">
+		<div class="container container-alt"> 
+			<ul class="contact-details">
+				<li>Contact</li>
+				<li>allan@allanpope.com</li>
+			</ul>
+
+			<ul class="contact-social">
+				<li>Online</li>
+				<li><a href="https://twitter.com/allanpweb" target="_blank">Twitter</a></li>
+				<li><a href="http://codepen.io/allanpope" target="_blank">CodePen</a></li>
+				<li><a href="https://github.com/allanpope" target="_blank">Github</a></li>
+				<li><a href="http://www.last.fm/user/allanpweb">LastFm</a></li>
+			</ul>
+			
+			<a class="mobile-menu" id="open-left">
+				<img src="/assets/img/menu.svg" alt="menu icon">
+			</a>
+
+		</div>
+
+		<div class="container header">
+			<ul class="nav">
+				<li class="link-one"><a href="/"  >Projects</a></li>
+				<li class="logo"><h1><a href="/"><img src="/assets/img/logo.svg" alt="AJP - Allan Pope"></a></h1></li>
+				<li class="link-two"><a href="/blog" >Blog</a></li>
+			</ul>
+		</div>
+
+		<div class="container page-title">
+			<h2 class="title">Frontend Web Developer</h2>
+			<div class="line"></div>
+
+			<div id="result"></div>
+		</div>
+
+		<section class="container">
+
+		<ul>
+	<li>
+		<article class="post single" itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 itemprop="name">Codepen Pattern Rodeo</h1>
+			<p class="date" itemprop="dateCreated">Published 25-06-2013 | By <a href="https://plus.google.com/101491171162004714201?rel=author" target="_blank" itemprop="author">Allan Pope</a></p>
+
+			
+
+			<div itemprop="description"><p class='intro'>It always amazes me what people come up with &amp; create on Codepen. I’ve been meaning to make a pen for a while but have always put it off. After keeping my eye on the weekly <a href='http://blog.codepen.io/rodeo/season-two/#week-four' target='_blank'>Pattern Rodeo challenge</a>, I decided that it would be a good excuse to a make a pen and learn a new skill.</p><h3 class='heading'>The challenge</h3><p>Start with a <a href='http://codepen.io/chriscoyier/pen/luIkw' target='_blank'>form</a> on this Pen (a customized version of a Wufoo form) and go nuts, making it as beautiful and useable as you can. You can change the HTML, CSS, and add JavaScript as you please, just make sure the questions and choices are just as they are in the original form.</p><h3 class='heading'>Idea</h3><p>Break the form into sections having each panel fold in when the user clicks next, using CSS transforms and CSS transitions to create the effect. This would require having all the panels sit at 90 degrees so you can’t see them, then make them sit at 0 degrees.</p><p>The first thing I did was add a class called 'disabled' to all the sections, exluding the first one. When the user clicks next section I removed the 'disabled' class on the very next section and replaced it with a class called 'enabled'. At the basic’s it was set up like this:</p><?prettify ?><pre class='prettyprint lang-css'>
+<xmp>
+li {
+    transition:all 1s ease-in-out;
+}
+
+.disabled{
+    display: none;
+    -webkit-transform:rotateX(90deg);
+    -moz-transform:rotateX(90deg);
+    -o-transform:rotateX(90deg);
+    transform:rotateX(90deg);
+}
+
+.enabled {
+    display: block;
+    -webkit-transform:rotateX(0deg);
+    -moz-transform:rotateX(0deg);
+    -o-transform:rotateX(0deg);
+    transform:rotateX(0deg);
+}
+</xmp>
+</pre><h3 class='heading'>Issue</h3><p>The sections would appear but the transition would not work.</p><h3 class='heading'>Solution</h3><p>After some research I found out that CSS transitions do not support the display property. Using a different method of hiding the sections worked. Giving the sections height: 0 and visibility: hidden made sure it was invisible.</p><?prettify ?><pre class='prettyprint lang-css'>
+<xmp>
+.disabled{
+    visibility: hidden;
+    height: 0;
+    -webkit-transform:rotateX(90deg);
+    -moz-transform:rotateX(90deg);
+    -o-transform:rotateX(90deg);
+    transform:rotateX(90deg);
+}
+
+.enabled {
+    padding: emCalc(30px);
+    height: auto;
+    -webkit-transform:rotateX(0deg);
+    -moz-transform:rotateX(0deg);
+    -o-transform:rotateX(0deg);
+    transform:rotateX(0deg);
+}
+</xmp>
+</pre><h3 class='heading'>Success</h3><p>Throughout the week, users vote on their favourite pen’s, the winner receiving a free PRO account for a year, plus a free CodePen swag bag, including a T-Shirt, pen (literally), and stickers. And runner ups winning a swag bag.</p><p>After the week was up my pen took out first place closely followed by a 3 way tie by some other excellent pens. </p><ul>
+	<li>Winner: <a href='http://codepen.io/allanpope/pen/uxIeG' target='_blank'>Allan Pope</a></li>
+	<li>Runner up: <a href='http://codepen.io/awesomephant/pen/ucvkK' target='_blank'>awesomephant</a>, <a href='http://codepen.io/pankajparashar/pen/xbAyl' target='_blank'>Pankaj Parashar</a>, <a href='http://codepen.io/tjacobdesign/pen/aIGsn' target='_blank'>Timothy Miller</a></li>
+</ul><pre class='codepen' data-height='500' data-href='uxIeG' data-safe='true' data-type='result' data-user='allanpope'> <code> </code> </pre><script src='http://codepen.io/assets/embed/ei.js'> </script></div>
+		</article>
+	</li>
+</ul>
+			
+		</section>
+
+		<div class="container copyright">
+			<p>© 2013 Allan Pope</p>
+		</div>
+
+	</div>
+	
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+	<script type="text/javascript" src="/assets/js/portfolio.min.js"></script>
+
+	<script type="text/javascript">
+
+  	var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20389916-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

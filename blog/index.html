@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+---
+{% for post in site.categories['blog'] %}
+
+<ul class="blog post">
+	<li>
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="heading"><a href="{{post.url}}" itemprop="name">{{post.title}}</a></h2>
+			<p class="date" itemprop="dateCreated">Published {{ post.date | date: "%d-%m-%Y" }} | By <a href="https://plus.google.com/101491171162004714201?rel=author" target="_blank" itemprop="author">Allan Pope</a></p>
+
+			{% if post.image %}
+
+			<a href="{{post.url}}"><div class="image">
+				<span data-picture data-alt="{{ post.image-alt-text }}">
+					<span data-src="{{ post.image }}"></span>
+					<span data-src="{{ post.image-mobile }}" data-media="(max-width: 430px)"></span>
+
+					<noscript>
+						<img itemprop="image" src="{{ post.image }}" alt="Codepen pattern rodeo 8">
+					</noscript>
+				</span>
+				<div class="overlay"></div>
+			</div></a>
+
+			{% endif %}
+
+			<div class="excerpt">
+				<p itemprop="description">{{ post.excerpt }}</p>
+			</div>
+
+			<a class="anchor" href="{{post.url}}" itemprop="url">Read more</a>
+		</article>
+	</li>
+</ul>
+
+{% endfor %}
