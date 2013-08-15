@@ -3,7 +3,7 @@ require 'rexml/document'
 module Jekyll
 
   # Change MY_URL to reflect the site you are using
-  MY_URL = "http://www.yzjoey.com"
+  MY_URL = "http://www.allanpope.com"
 
   # Change SITEMAP_FILE_NAME if you would like your sitemap file
   # to be called something else

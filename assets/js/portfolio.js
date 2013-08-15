@@ -585,6 +585,7 @@ window.matchMedia=window.matchMedia||function(a){"use strict";var c,d=a.document
             if (opts.element) {
                 utils.deepExtend(settings, opts);
                 cache.vendor = utils.vendor();
+                action.drag.listen();
             }
         };
         /*

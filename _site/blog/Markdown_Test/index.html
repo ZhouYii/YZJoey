@@ -4,17 +4,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="Personal &amp; blog for Zhou Yi">
-	<title> Metacognition and Learning, a Method to the Madness. |  Zhou Yi</title>
+	<meta name="description" content="Personal portfolio &amp; blog for Zhou Yi">
+	<title> Metacognition for Problem Solving. |  Zhou Yi</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='https://plus.google.com/101491171162004714201' rel='author'>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 	<script type="text/javascript" src="/assets/js/modernizr-custom.min.js"></script>
 </head>
 <body>
 
-	<div id="content">
+	<div class="snap-drawers">
+		<div class="snap-drawer snap-drawer-left">
+			<div>
+				<ul class="pages">
+					<li><a href="/">Projects  </a></li>
+					<li><a href="/blog">Blog </a></li>
+				</ul>
+			</div>
+			<ul class="contact-social"> 
+				<li><a href="https://twitter.com/yizhou_" target="_blank">Twitter</a></li>
+				<li><a href="https://github.com/yigh" target="_blank">Github</a></li>
+				<li><a href="http://www.last.fm/user/yigh">LastFm</a></li>
+			</ul>
+		</div>
+		 <div class="snap-drawer snap-drawer-right"></div>
+	</div>
+
+	<div id="content" class="snap-content">
 		<div class="container container-alt"> 
 			<ul class="contact-details">
 				<li>Contact</li>
@@ -26,23 +44,22 @@
             </ul>
 
 			<ul class="contact-social">
-				<li>My Stuff</li>
+				<li>Online</li>
 				<li><a href="https://github.com/yigh" target="_blank">Github</a></li>
 				<li><a href="http://www.last.fm/user/yigh">LastFm</a></li>
 			</ul>
 			
+			<a class="mobile-menu" id="open-left">
+				<img src="/assets/img/menu.svg" alt="menu icon">
+			</a>
+
 		</div>
 
-        <div class="container header">
-
-
-            <ul class="nav">
-                <div class="container page-title">
-                    <br>
-				    <li class="link-one"><a href="/"  >Projects</a></li>
-                    <li class="logo"><h1><a href="/"><img src="/assets/img/logo.svg" alt="Yi Zhou"></a></h1></li>
-                    <li class="link-two"><a href="/blog" >Blog</a></li>
-                </div>
+		<div class="container header">
+			<ul class="nav">
+				<li class="link-one"><a href="/"  >Projects</a></li>
+				<li class="logo"><h1><a href="/"><img src="/assets/img/logo.svg" ></a></h1></li>
+				<li class="link-two"><a href="/blog" >Blog</a></li>
 			</ul>
 		</div>
 
@@ -57,32 +74,54 @@
 		<ul>
 	<li>
 		<article class="post single" itemscope itemtype="http://schema.org/BlogPosting">
-			<h1 itemprop="name">Metacognition and Learning, a Method to the Madness.</h1>
-			<p class="date" itemprop="dateCreated">Published 14-08-2013 | By <a href="https://plus.google.com/101491171162004714201?rel=author" target="_blank" itemprop="author">Zhou Yi</a></p>
+			<h1 itemprop="name">Metacognition for Problem Solving.</h1>
+			<p class="date" itemprop="dateCreated">Published 14-08-2013 | By <a href="https://plus.google.com/101491171162004714201?rel=author" target="_blank" itemprop="author">Allan Pope</a></p>
 
 			
 
-			<div itemprop="description"><p>     Arguably, the most valuable lesson I learned from taking a proof-centric course in computational theory is that problem solving requires a structured process. Prior to that realization, I approached many of my proofs by applying the Richard Feynman algorithm.</p>
+			<div itemprop="description"><p>Would I be called &#8216;negligent&#8217; for failing to refine my methods? <br /> <p>     Arguably, the most valuable lesson I learned from taking a proof-centric course in computation theory is that problem solving requires a structured process. Prior to that realization, I approached many of my proofs by applying the Richard Feynman algorithm.</p></p>
+
 <blockquote>
 <p>The Richard Feynman Algorithm: <ol>
        <li>Look at the problem.</li>
        <li>Think really hard.</li>
        <li>Write down the solution</li>
    </ol></p>
-</blockquote></div>
+</blockquote>
+<p>For the most part, the Feynman algorithm had served me well provided I approached candidate solutions with skepticism. After some refinement of my intuitive guesses, the results are considerably acceptable. The Feynman algorithm and a strong dose of nondeterminism where applicable (nondeterminism is an academic way of saying 'just brute-force the damn solution') quickly yields solutions to most proofs involving finite automata and context-free-grammars. Soon proofs became more complex as the turing machine decided to rear its ugly head. My strategy consisting of gut instincts and consulting patterns from previous proofs proved indequate when my goal was to reliably generate a proof under delicate time constraints (after all, most of these proofs were from problem sets with deadlines or exams with even stricter deadlines). Randomly trying ideas and building an intuition from past failures is a good way to understand the material but a bad way for solving the proof. With no guarantee that a solution may be found, the Feynman algorithm is not reliable for solving novel problems. A new method was required.</p>
+<blockquote>
+<p>The Fantastic Algorithm: <ol>
+      <li>Consider necessary intermediate requirements for reaching the proof's desired state.</li>
+      <li>Somehow fulfill all the intermediate requirements.</li>
+      <ol>
+          <li>If conclusively impossible, start from the top with a new set of intermediate states.</li>
+      </ol>
+      <li>Write down the solution.</li>
+  </ol></p>
+</blockquote>
+<p>The Fantastic algorithm lived up to its name in all but one respect: fulfilling the intermediate requirements was not a trivial task.
+Proving some set of conditions was conclusively impossible to fulfil required an expedition deep into the semantics of the conditions and looking for incongruities. Often times when a clear direction to the solution is missing, the Fantastic Algorithm is an exercise in brute-forcing the 'intermediate-condition'-space of the problem. This systematic approach is still a step up from the chaotic approach of the Feynman Algorithm since it does guarantee that sooner or later, a proof will be found.</p></div>
 		</article>
 	</li>
 </ul>
-
 			
 		</section>
 
 	</div>
-	
-    <br><br>
-    
+    <br><br>	
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/js/portfolio.js"></script>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43199255-1', 'yzjoey.com');
+      ga('send', 'pageview');
+
+    </script>
 </body>
-</html>
+/html>

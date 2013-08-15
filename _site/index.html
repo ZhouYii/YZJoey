@@ -4,17 +4,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="Personal &amp; blog for Zhou Yi">
+	<meta name="description" content="Personal portfolio &amp; blog for Zhou Yi">
 	<title> Zhou Yi</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='https://plus.google.com/101491171162004714201' rel='author'>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 	<script type="text/javascript" src="/assets/js/modernizr-custom.min.js"></script>
 </head>
 <body>
 
-	<div id="content">
+	<div class="snap-drawers">
+		<div class="snap-drawer snap-drawer-left">
+			<div>
+				<ul class="pages">
+					<li><a href="/">Projects   - </a></li>
+					<li><a href="/blog">Blog </a></li>
+				</ul>
+			</div>
+			<ul class="contact-social"> 
+				<li><a href="https://twitter.com/yizhou_" target="_blank">Twitter</a></li>
+				<li><a href="https://github.com/yigh" target="_blank">Github</a></li>
+				<li><a href="http://www.last.fm/user/yigh">LastFm</a></li>
+			</ul>
+		</div>
+		 <div class="snap-drawer snap-drawer-right"></div>
+	</div>
+
+	<div id="content" class="snap-content">
 		<div class="container container-alt"> 
 			<ul class="contact-details">
 				<li>Contact</li>
@@ -26,23 +44,22 @@
             </ul>
 
 			<ul class="contact-social">
-				<li>My Stuff</li>
+				<li>Online</li>
 				<li><a href="https://github.com/yigh" target="_blank">Github</a></li>
 				<li><a href="http://www.last.fm/user/yigh">LastFm</a></li>
 			</ul>
 			
+			<a class="mobile-menu" id="open-left">
+				<img src="/assets/img/menu.svg" alt="menu icon">
+			</a>
+
 		</div>
 
-        <div class="container header">
-
-
-            <ul class="nav">
-                <div class="container page-title">
-                    <br>
-				    <li class="link-one"><a href="/"   class="active" >Projects</a></li>
-                    <li class="logo"><h1><a href="/"><img src="/assets/img/logo.svg" alt="Yi Zhou"></a></h1></li>
-                    <li class="link-two"><a href="/blog" >Blog</a></li>
-                </div>
+		<div class="container header">
+			<ul class="nav">
+				<li class="link-one"><a href="/"   class="active" >Projects</a></li>
+				<li class="logo"><h1><a href="/"><img src="/assets/img/logo.svg" ></a></h1></li>
+				<li class="link-two"><a href="/blog" >Blog</a></li>
 			</ul>
 		</div>
 
@@ -60,7 +77,6 @@
 		<span data-picture data-alt="Screenshot of FamilyOS">
 			<span data-src="/assets/img/OS_930.png"></span>
 		</span>
-		<div class="overlay"></div></a>
 	</div>
 
 	<div class="details">
@@ -87,7 +103,6 @@
 		<span data-picture data-alt="CV Hand">
 			<span data-src="/assets/img/CV_930.png"></span>
 		</span>
-		<div class="overlay"></div></a>
 	</div>
 
 <div class="details">
@@ -114,7 +129,7 @@
 		<span data-picture data-alt="Screenshot of PreReq's Skill Interface">
 			<span data-src="/assets/img/btp_930.jpg"></span>
 		</span>
-		<div class="overlay"></div></a>
+		</a>
 	</div>
 
 	<div class="details">
@@ -140,11 +155,20 @@
 		</section>
 
 	</div>
-	
-    <br><br>
-    
+    <br><br>	
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/js/portfolio.js"></script>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43199255-1', 'yzjoey.com');
+      ga('send', 'pageview');
+
+    </script>
 </body>
-</html>
+/html>

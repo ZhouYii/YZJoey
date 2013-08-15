@@ -8,6 +8,7 @@ title: Blog
 	<li>
 		<article itemscope itemtype="http://schema.org/BlogPosting">
 			<h2 class="heading"><a href="{{post.url}}" itemprop="name">{{post.title}}</a></h2>
+			<p class="date" itemprop="dateCreated">Published {{ post.date | date: "%d-%m-%Y" }} | By <a href="https://plus.google.com/101491171162004714201?rel=author" target="_blank" itemprop="author">Allan Pope</a></p>
 
 			{% if post.image %}
 
@@ -29,6 +30,7 @@ title: Blog
 				<p itemprop="description">{{ post.excerpt }}</p>
 			</div>
 
+			<a class="anchor" href="{{post.url}}" itemprop="url">Read more</a>
 		</article>
 	</li>
 </ul>
