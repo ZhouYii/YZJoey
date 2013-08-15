@@ -1,10 +1,8 @@
 ---
 layout: blog_post
-title: Metacognition for Problem Solving.
-excerpt: Putting a method to the madness. 
+title: Metacognition for Problem Solving
+excerpt: Putting a method to the madness. From what I've seen, finding a solution is fastest when taking a methodical route. Serendipity is not a reliable weapon for approaching proofs (usually). 
 ---
-Would I be called 'negligent' for failing to refine my methods?
-<br>
 <p>     Arguably, the most valuable lesson I learned from taking a proof-centric course in computation theory is that problem solving requires a structured process. Prior to that realization, I approached many of my proofs by applying the Richard Feynman algorithm.</p>
 
 >The Richard Feynman Algorithm:
