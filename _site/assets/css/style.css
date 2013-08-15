@@ -42,7 +42,7 @@ html{
     background:#FFF
 }
 
-body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+body,div,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,th,td{
     margin:0;
     padding:0
 }
