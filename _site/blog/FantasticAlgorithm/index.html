@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="Personal portfolio &amp; blog for Zhou Yi">
-	<title> Setting Up This Site |  Zhou Yi</title>
+	<title> Metacognition for Problem Solving |  Zhou Yi</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -74,15 +74,32 @@
 		<ul>
 	<li>
 		<article class="post single" itemscope itemtype="http://schema.org/BlogPosting">
-			<h1 itemprop="name">Setting Up This Site</h1>
-			<p class="date" itemprop="dateCreated">Published 15-08-2013 | By <a href="https://plus.google.com/110055789125302791148/posts" target="_blank" itemprop="author">Zhou Yi</a></p>
+			<h1 itemprop="name">Metacognition for Problem Solving</h1>
+			<p class="date" itemprop="dateCreated">Published 14-08-2013 | By <a href="https://plus.google.com/110055789125302791148/posts" target="_blank" itemprop="author">Zhou Yi</a></p>
 
 			
 
-			<div itemprop="description"><p class='intro'>
-Sustainability is something I consided before taking the time to build this site. Almost everything has some sort of cost associated with it and making a quick website is no different. At first, I thought maybe this website is something that will briefly hold my interest before quickly falling into disuse. Luckily for me, Jekyll and Amazon's S3 online storage service provides me a way to host my site without dealing with server hosts. In terms of costs, the sunk cost to acquire a domain was small and there are no visible recurring costs for at least a year.
-<br /><br />
-A lot of code on this blog was forked from a similar blog made by Allan Pope. His github is here: https://github.com/allanpope. I stripped down the website even more to push the minimalist motif to the limits. This involved fiddling with a certain Snap.js library because even after I deleted the library file, the javascript code was still being called and was modifying my page elements. After half a hour of aggravation, I realized there was a library file with the Snap.js library concatenated at it's end. Such is the cost of standing on the shoulders of fantastic frontend developers.</p></div>
+			<div itemprop="description"><p>     Arguably, the most valuable lesson I learned from taking a proof-centric course in computation theory is that problem solving requires a structured process. Prior to that realization, I approached many of my proofs by applying the Richard Feynman algorithm.</p>
+<blockquote>
+<p>The Richard Feynman Algorithm: <ol>
+       <li>Look at the problem.</li>
+       <li>Think really hard.</li>
+       <li>Write down the solution</li>
+   </ol></p>
+</blockquote>
+<p>For the most part, the Feynman algorithm had served me well provided I approached candidate solutions with skepticism. After some refinement of my intuitive guesses, the results are considerably acceptable. The Feynman algorithm and a strong dose of nondeterminism where applicable (nondeterminism is an academic way of saying 'just brute-force the damn solution') quickly yields solutions to most proofs involving finite automata and context-free-grammars. Soon proofs became more complex as the turing machine decided to rear its ugly head. My strategy consisting of gut instincts and consulting patterns from previous proofs proved indequate when my goal was to reliably generate a proof under delicate time constraints (after all, most of these proofs were from problem sets with deadlines or exams with even stricter deadlines). Randomly trying ideas and building an intuition from past failures is a good way to understand the material but a bad way for solving the proof. With no guarantee that a solution may be found, the Feynman algorithm is not reliable for solving novel problems. A new method was required.</p>
+<blockquote>
+<p>The Fantastic Algorithm: <ol>
+      <li>Consider necessary intermediate requirements for reaching the proof's desired state.</li>
+      <li>Somehow fulfill all the intermediate requirements.</li>
+      <ol>
+          <li>If conclusively impossible, start from the top with a new set of intermediate states.</li>
+      </ol>
+      <li>Write down the solution.</li>
+  </ol></p>
+</blockquote>
+<p>The Fantastic algorithm lived up to its name in all but one respect: fulfilling the intermediate requirements was not a trivial task.
+Proving some set of conditions was conclusively impossible to fulfil required an expedition deep into the semantics of the conditions and looking for incongruities. Often times when a clear direction to the solution is missing, the Fantastic Algorithm is an exercise in brute-forcing the 'intermediate-condition'-space of the problem. This systematic approach is still a step up from the chaotic approach of the Feynman Algorithm since it does guarantee that sooner or later, a proof will be found.</p></div>
             </article>
             <br>
 	</li>
